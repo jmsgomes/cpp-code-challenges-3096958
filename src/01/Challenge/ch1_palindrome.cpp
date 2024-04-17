@@ -13,6 +13,7 @@
 //           str: The string to analyze.
 // Returns: A boolean value. True for palindromes, false otherwise.
 bool is_palindrome(std::string str) {
+  std::transform(str.begin(), str.end(), str.begin(), tolower);
   int length = str.length();
   int last = length - 1;
   int midpoint = length / 2;
