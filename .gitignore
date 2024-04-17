@@ -1,3 +1,11 @@
+# Goal: ignore all files without extensions
+# Ignore all
+*
+# Unignore folders
+!/**/
+# Unignore files with extensions
+!*.*
+
 .DS_Store
 node_modules
 .tmp
